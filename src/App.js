@@ -1,25 +1,34 @@
+
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import Layout from './hoc/Layout';
+import Home from './components/Home';
+import World from './components/World';
+import Tech from './components/Tech';
+import Contact from './components/Contact';
+import Article1 from './components/Article1';
+import Article2 from './components/Article2';
+import Article3 from './components/Article3';
+import Article4 from './components/Article4';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Layout>
+        <Switch>
+          <Route exact path="/pages/world" component={World} />
+          <Route exact path="/pages/tech" component={Tech} />
+          <Route exact path="/pages/contact" component={Contact} />
+          <Route exact path="/pages/article1" component={Article1} />
+          <Route exact path="/pages/article2" component={Article2} />
+          <Route exact path="/pages/article3" component={Article3} />
+          <Route exact path="/pages/article4" component={Article4} />
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </Layout>
+    </Router>
   );
 }
 
