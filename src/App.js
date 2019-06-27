@@ -1,6 +1,7 @@
 
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React, { Component } from 'react';
+import { Switch, Route, withRouter } from 'react-router-dom';
+import quicklink from 'quicklink/dist/quicklink.mjs';
 
 import Layout from './hoc/Layout';
 import Home from './components/Home';
@@ -13,9 +14,15 @@ import Article3 from './components/Article3';
 import Article4 from './components/Article4';
 import './App.css';
 
-const App = () => {
-  return (
-    <Router>
+class App extends Component {
+  componentDidUpdate(prevProps) {
+    if (this.props.location.pathname !== prevProps.location.pathname) {
+      console.log('ray : route change to => ', this.props.location.pathname, ' so call quicklink');
+      quicklink();
+    }
+  }
+  render () {
+    return (
       <Layout>
         <Switch>
           <Route exact path="/pages/world" component={World} />
@@ -28,8 +35,8 @@ const App = () => {
           <Route exact path="/" component={Home} />
         </Switch>
       </Layout>
-    </Router>
-  );
+    );
+  }
 }
 
-export default App;
+export default withRouter(App);
