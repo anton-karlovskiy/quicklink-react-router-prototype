@@ -44,17 +44,10 @@ const World = () => {
             <li className="list-item"><Link to="pages/article2" className="post-link">Article 2</Link></li>
             <li className="list-item"><Link to="pages/article3" className="post-link">Article 3</Link></li>
             <li className="list-item"><Link to="pages/article4" className="post-link">Article 4</Link></li>
-            <li className="list-item"><Link to="pages/article-missing.html" className="post-link">Non-existent article</Link></li>
           </ul>
         </div>
         <div className="right column">
           <h4 className="list-title">Archived Posts</h4>
-          <ul className="vertical-list">
-            <li className="list-item"><a href="pages/post1.html" className="post-link">Archived Post 1</a></li>
-            <li className="list-item"><a href="pages/post2.html" className="post-link">Archived Post 2</a></li>
-            <li className="list-item"><a href="pages/post3.html" className="post-link">Archived Post 3</a></li>
-            <li className="list-item"><a href="pages/post-missing.html" className="post-link">Non-existent Post 4</a></li>
-          </ul>
         </div>
       </section>
     </article>
