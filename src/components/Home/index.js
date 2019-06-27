@@ -15,6 +15,7 @@ limitations under the License.
 */
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const World = () => {
   return (
@@ -39,11 +40,11 @@ const World = () => {
         <div className="left column">
           <h4 className="list-title">Trending Articles</h4>
           <ul className="vertical-list">
-            <li className="list-item"><a href="pages/article1.html" className="post-link">Article 1</a></li>
-            <li className="list-item"><a href="pages/article2.html" className="post-link">Article 2</a></li>
-            <li className="list-item"><a href="pages/article3.html" className="post-link">Article 3</a></li>
-            <li className="list-item"><a href="pages/article4.html" className="post-link">Article 4</a></li>
-            <li className="list-item"><a href="pages/article-missing.html" className="post-link">Non-existent article</a></li>
+            <li className="list-item"><Link to="pages/article1" className="post-link">Article 1</Link></li>
+            <li className="list-item"><Link to="pages/article2" className="post-link">Article 2</Link></li>
+            <li className="list-item"><Link to="pages/article3" className="post-link">Article 3</Link></li>
+            <li className="list-item"><Link to="pages/article4" className="post-link">Article 4</Link></li>
+            <li className="list-item"><Link to="pages/article-missing.html" className="post-link">Non-existent article</Link></li>
           </ul>
         </div>
         <div className="right column">

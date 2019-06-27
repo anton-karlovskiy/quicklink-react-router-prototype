@@ -21,7 +21,7 @@ const Article1 = () => {
     <article id="post">
       <section>
         <div className="img-container left column">
-          <img src="https://cdn.glitch.com/8a455d85-8f99-42e6-837b-dfc94b62b2b9%2Fworld.jpg?v=1561649029292" alt="Looking up at skyscrapers" />
+          <img src="https://cdn.glitch.com/2feb9fb8-169d-4ea0-9d82-ece1d1199861/buildings.jpg?v=1560086771323" alt="Looking up at skyscrapers" />
         </div>
         <div className="right column">
           <h2 className="headline">Article 1</h2>
