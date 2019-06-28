@@ -15,12 +15,24 @@ import Article4 from './components/Article4';
 import './App.css';
 
 class App extends Component {
+  // when app is mounted for the first time
+  componentDidMount() {
+    console.log('ray : [App componentDidMount] route change to => ', this.props.location.pathname, ' so call quicklink');
+    this.quicklinkHandler();
+  }
+
+  // when app is rerendered after mounted
   componentDidUpdate(prevProps) {
     if (this.props.location.pathname !== prevProps.location.pathname) {
-      console.log('ray : route change to => ', this.props.location.pathname, ' so call quicklink');
-      quicklink();
+      console.log('ray : [App componentDidUpdate] route change to => ', this.props.location.pathname, ' so call quicklink');
+      this.quicklinkHandler();
     }
   }
+
+  quicklinkHandler = () => {
+    quicklink();
+  };
+
   render () {
     return (
       <Layout>

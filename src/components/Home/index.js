@@ -17,7 +17,7 @@ limitations under the License.
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const World = () => {
+const Home = () => {
   return (
     <article>
       <h1>News</h1>
@@ -54,4 +54,4 @@ const World = () => {
   );
 };
 
-export default World;
+export default Home;
