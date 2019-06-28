@@ -17,3 +17,6 @@ The effect is componentDidMount is called once when the website is loaded or onl
 The workflow from quicklink README is "Detects links within the viewport".
 
 In MPA(multi page application - traditional website) quicklink is called inside window-onload-event so every time url is changed, it's called but not in SPA.
+
+https://glitch.com/~anton-karlovskiy-quicklink-react-router
+https://anton-karlovskiy-quicklink-react-router.glitch.me
