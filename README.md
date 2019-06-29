@@ -21,5 +21,5 @@ The workflow from quicklink README is "Detects links within the viewport".
 
 In MPA(multi page application - traditional website) quicklink is called inside window-onload-event so every time url is changed, it's called but not in SPA.
 
-https://glitch.com/~anton-karlovskiy-quicklink-react-router
-https://anton-karlovskiy-quicklink-react-router.glitch.me
+[Available here.](https://glitch.com/~anton-karlovskiy-quicklink-react-router)
+[Source](https://anton-karlovskiy-quicklink-react-router.glitch.me)
